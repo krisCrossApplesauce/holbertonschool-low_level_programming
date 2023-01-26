@@ -8,26 +8,18 @@
 
 int main(void)
 {
-	char c;
-
 	int i;
 
-	char dig[11] = "0123456789";
-
-	for (i = 0; i < 11; i++)
+	for (i = '0'; i < '9'; i++)
 	{
-		c = dig[i];
-		if (i < 9)
+		if (i < '9')
 		{
-			putchar(c);
+			putchar(i);
 			putchar(',');
 		}
-		else if (i == 9)
+		else if (i == '9')
 		{
-			putchar(c);
-		}
-		else if (i == 10)
-		{
+			putchar(i);
 			putchar('\n');
 		}
 	}
