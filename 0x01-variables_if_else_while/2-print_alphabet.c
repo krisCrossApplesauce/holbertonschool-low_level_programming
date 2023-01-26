@@ -17,7 +17,14 @@ int main(void)
 	for (i = 0; i < 27; i++)
 	{
 		c = alph[i];
-		putchar(c);
+		if (i < 26)
+		{
+			putchar(c);
+		}
+		else if (i == 26)
+		{
+			putchar('\n');
+		}
 	}
 	return (0);
 }
