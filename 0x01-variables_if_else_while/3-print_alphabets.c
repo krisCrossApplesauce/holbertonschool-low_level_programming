@@ -23,9 +23,9 @@ int main(void)
 		{
 			putchar(c);
 		}
-		else if (i >= 26 && i < 53)
+		else if (i >= 26)
 		{
-			for (i = 27; i < 53; i++)
+			for (i = 27; i < 54; i++)
 			{
 				c = ALPH[i - 27];
 				if ((i - 27) < 26)
