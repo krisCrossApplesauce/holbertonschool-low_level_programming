@@ -28,12 +28,15 @@ int main(void)
 			for (i = 27; i < 53; i++)
 			{
 				c = ALPH[i - 27];
-				putchar(c);
+				if ((i - 27) < 26)
+				{
+					putchar(c);
+				}
+				else if ((i - 27) == 26)
+				{
+					putchar('\n');
+				}
 			}
-		}
-		else if (i == 53)
-		{
-			putchar('\n');
 		}
 	}
 	return (0);
