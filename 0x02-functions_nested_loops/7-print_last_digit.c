@@ -19,25 +19,21 @@ int print_last_digit(int n)
 	{
 		last = 8;
 		/* printf("%d%d\n", last, last); */
-		return (88);
 	}
 	else if (n < 0)
 	{
 		last = (n * -1) % 10;
 		/* printf("%d%d\n", last, last); */
-		return (last * 11);
 	}
 	else if (n == 0)
 	{
 		last = 0;
-		return (00);
 	}
 	else
 	{
 		last = n % 10;
 		/* printf("%d%d\n", last, last); */
-		return (last * 11);
 	}
 
-	return (0);
+	return (last);
 }
