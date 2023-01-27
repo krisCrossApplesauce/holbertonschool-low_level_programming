@@ -15,24 +15,21 @@ int print_last_digit(int n)
 {
 	int last;
 
-/**	if (n == INT_MIN)
-*	{
-*		last = 8;
-*	}
-*	else if (n < 0)
-*	{
-*		last = (n * -1) % 10;
-*	}
-*	else
-*	{
-*		last = n % 10;
-*	}
-*/
-	last = n % 10;
-
-	_putchar(last);
-	_putchar(last);
-	_putchar('\n');
+	if (n == INT_MIN)
+	{
+		last = 8;
+		printf("%d%d\n", last, last);
+	}
+	else if (n < 0)
+	{
+		last = (n * -1) % 10;
+		printf("%d%d\n", last, last);
+	}
+	else
+	{
+		last = n % 10;
+		printf("%d%d\n", last, last);
+	}
 
 	return (0);
 }
