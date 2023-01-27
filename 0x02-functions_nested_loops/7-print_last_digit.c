@@ -22,13 +22,17 @@ int print_last_digit(int n)
 	{
 		last = 0;
 	}
+	else if (n == -2147483648)
+	{
+		last = 8 * 11;
+	}
 	else if (n < 0)
 	{
-		last = (n * -1) % 10;
+		last = ((n * -1) % 10) * 11;
 	}
 	else
 	{
-		last = n % 10;
+		last = (n % 10) * 11;
 	}
 
 	return (last);
