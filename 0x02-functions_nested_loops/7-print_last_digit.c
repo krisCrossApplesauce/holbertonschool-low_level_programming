@@ -8,7 +8,7 @@
  * @n: number
  * ^idc if you say it isnt there, it is
  *
- * Return: stuff
+ * Return: i dont have to return anything
  */
 
 int print_last_digit(int n)
@@ -28,5 +28,6 @@ int print_last_digit(int n)
 		last = n % 10;
 	}
 
+	printf("%d%d", last, last);
 	return (last);
 }
