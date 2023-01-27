@@ -17,15 +17,15 @@ int print_last_digit(int n)
 
 	if (n == INT_MIN)
 	{
-		last = 8 * 11;
+		last = 8;
 	}
 	else if (n < 0)
 	{
-		last = ((n * -1) % 10) * 11;
+		last = (n * -1) % 10;
 	}
 	else
 	{
-		last = (n % 10) * 11;
+		last = n % 10;
 	}
 
 	return (last);
