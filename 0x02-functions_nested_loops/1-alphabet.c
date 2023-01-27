@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - void
+ * print_alphabet - void
  *
  * Return: whatever
  */
@@ -26,5 +26,4 @@ void print_alphabet(void)
 			_putchar('\n');
 		}
 	}
-	return (0);
 }
