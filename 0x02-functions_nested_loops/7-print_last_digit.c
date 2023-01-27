@@ -8,7 +8,7 @@
  * @n: number
  * ^idc if you say it isnt there, it is
  *
- * Return: i dont have to return anything
+ * Return: ugg, this is my issue
  */
 
 int print_last_digit(int n)
@@ -18,17 +18,25 @@ int print_last_digit(int n)
 	if (n == INT_MIN)
 	{
 		last = 8;
-		printf("%d%d\n", last, last);
+		/* printf("%d%d\n", last, last); */
+		return (88);
 	}
 	else if (n < 0)
 	{
 		last = (n * -1) % 10;
-		printf("%d%d\n", last, last);
+		/* printf("%d%d\n", last, last); */
+		return (last * 11);
+	}
+	else if (n == 0)
+	{
+		last = 0;
+		return (00);
 	}
 	else
 	{
 		last = n % 10;
-		printf("%d%d\n", last, last);
+		/* printf("%d%d\n", last, last); */
+		return (last * 11);
 	}
 
 	return (0);
