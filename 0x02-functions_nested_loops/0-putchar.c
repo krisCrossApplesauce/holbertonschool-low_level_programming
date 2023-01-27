@@ -14,14 +14,14 @@ int main(void)
 
 	char txt[9] = "_putchar";
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
 		c = txt[i];
-		if (i < 9)
+		if (i < 8)
 		{
 			putchar(c);
 		}
-		else if (i == 9)
+		else if (i == 8)
 		{
 			putchar('\n');
 		}
