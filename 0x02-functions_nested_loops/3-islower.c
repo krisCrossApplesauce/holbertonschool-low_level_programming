@@ -4,7 +4,8 @@
  * _islower - int
  *
  * @c: is a character, translated into an int using its ASCII value
- * ^that's why c is compared to numbers in if statement, comparing the ASCII values
+ * ^that's why c is compared to numbers in if statement
+ * ^^comparing the ASCII values
  *
  * Return: 1 if c is lowercase, 0 otherwise
  */
