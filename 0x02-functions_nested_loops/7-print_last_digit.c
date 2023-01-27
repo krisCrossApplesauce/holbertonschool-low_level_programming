@@ -17,18 +17,18 @@ int print_last_digit(int n)
 	if ((n % 10) == 0)
 	{
 		last = 0;
+		_putchar(last);
 	}
 	else if (n < 0)
 	{
 		last = (n * -1) % 10;
+		_putchar(last);
 	}
 	else
 	{
 		last = n % 10;
+		_putchar(last);
 	}
-
-	_putchar(last);
-	_putchar(last);
 
 	return(0);
 }
