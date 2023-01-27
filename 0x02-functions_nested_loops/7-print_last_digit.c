@@ -14,21 +14,18 @@ int print_last_digit(int n)
 {
 	int last;
 
-	if ((n % 10) == 0)
+	if (n % 10)
 	{
 		last = 0;
-		_putchar(last);
 	}
 	else if (n < 0)
 	{
 		last = (n * -1) % 10;
-		_putchar(last);
 	}
 	else
 	{
 		last = n % 10;
-		_putchar(last);
 	}
 
-	return(0);
+	return(last);
 }
