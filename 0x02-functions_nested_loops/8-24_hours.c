@@ -13,17 +13,17 @@ void jack_bauer(void)
 
 	for (h = 0; h < 13; h++)
 	{
-		if (h < 10)
-		{
-			printf("0%d:", h);
-		}
-		else
-		{
-			printf("%d:", h);
-		}
-
 		for (m = 0; m < 60; m++)
 		{
+			if (h < 10)
+			{
+				printf("0%d:", h);
+			}
+			else
+			{
+				printf("%d:", h);
+			}
+
 			if (m < 10)
 			{
 				printf("0%d\n", m);
