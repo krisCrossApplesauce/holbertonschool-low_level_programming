@@ -26,11 +26,11 @@ void jack_bauer(void)
 		{
 			if (m < 10)
 			{
-				printf("0%d", m);
+				printf("0%d\n", m);
 			}
 			else
 			{
-				printf("%d", m);
+				printf("%d\n", m);
 			}
 		}
 	}
