@@ -17,17 +17,27 @@ void times_table(void)
 		{
 			c = a * b;
 
-			if (c < 10)
+			if (b == 9)
 			{
-				printf("  %d,", c);
+				if (c < 10)
+				{
+					printf("  %d", c);
+				}
+				else
+				{
+					printf(" %d", c);
+				}
 			}
-			else if (b < 9)
+			else
 			{
-				printf(" %d,", c);
-			}
-			else if (b == 9)
-			{
-				printf(" %d", c);
+				if (c < 10)
+				{
+					printf("  %d,", c);
+				}
+				else
+				{
+					printf(" %d,", c);
+				}
 			}
 		}
 
