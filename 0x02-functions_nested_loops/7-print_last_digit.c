@@ -8,32 +8,23 @@
  * @n: number
  * ^idc if you say it isnt there, it is
  *
- * Return: ugg, this is my issue
+ * Return: that was so unclear
+ * ^also how was I to figure out that putting
+ * var + '0'
+ * in _putchar makes the var a char
  */
 
 int print_last_digit(int n)
 {
 	int last;
 
-	if (n == INT_MIN)
+	last = n % 10;
+
+	if (n < 0)
 	{
-		last = 8;
-		/* printf("%d%d\n", last, last); */
-	}
-	else if (n < 0)
-	{
-		last = (n * -1) % 10;
-		/* printf("%d%d\n", last, last); */
-	}
-	else if (n == 0)
-	{
-		last = 0;
-	}
-	else
-	{
-		last = n % 10;
-		/* printf("%d%d\n", last, last); */
+		last = last * -1;
 	}
 
+	_putchar(last + '0');
 	return (last);
 }
