@@ -8,6 +8,6 @@
 
 int main(void)
 {
-/*	fizz_buzz(); */
+	not_fizz_buzz();
 	return (0);
 }
