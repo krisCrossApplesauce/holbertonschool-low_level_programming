@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include  "main.h"
+#include "main.h"
 
 /**
  * fizz_buzz - prints numbers 1-100, except:
@@ -7,10 +7,10 @@
  * multiples of 5 print Buzz
  * multiples of both print FizzBuzz
  *
- * Return: void
+ * Return: 1-100 w/ mult of 3 Fizz, mult of 5 Buzz, mult of both FizzBuzz
  */
 
-void fizz_buzz(void)
+int fizz_buzz(void)
 {
 	int i;
 
@@ -38,5 +38,7 @@ void fizz_buzz(void)
 			printf(" ");
 		}
 	}
+
 	printf("\n");
+	return (0);
 }
