@@ -22,9 +22,19 @@ void puts_half(char *str)
 
 	for (i = 0; i < sl; i++)
 	{
-		if (i >= (sl / 2))
+		if (!(sl % 2))
 		{
-			_putchar(str[i]);
+			if (i >= (sl / 2))
+			{
+				_putchar(str[i]);
+			}
+		}
+		else
+		{
+			if (i > (sl / 2))
+			{
+				_putchar(str[i]);
+			}
 		}
 	}
 

@@ -12,5 +12,7 @@ int main(void)
 
 	str = "0123456789";
 	puts_half(str);
+	str = "123456789";
+	puts_half(str);
 	return (0);
 }
