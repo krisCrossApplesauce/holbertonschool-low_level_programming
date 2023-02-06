@@ -28,5 +28,11 @@ void rev_string(char *s)
 		str = s[i];
 		s[i] = s[sl - i - 1];
 		s[sl - i - 1] = str;
+/**
+ * first loop, swaps the outer characters
+ * swaps next characters inward every loop
+ * stops at half way (i >= sl / 2) so doesnt undo swapping
+ * - 1 for i = sl - 1 so doesnt include /0
+ */
 	}
 }
