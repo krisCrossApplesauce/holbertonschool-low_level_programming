@@ -40,9 +40,20 @@ void print_array(int *a, int n)
 int main(void)
 {
 	int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+	int b[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int c[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337, 45875};
 
 	print_array(a, sizeof(a) / sizeof(int));
 	reverse_array(a, sizeof(a) / sizeof(int));
 	print_array(a, sizeof(a) / sizeof(int));
+
+	print_array(b, sizeof(b) / sizeof(int));
+	reverse_array(b, sizeof(b) / sizeof(int));
+	print_array(b, sizeof(b) / sizeof(int));
+
+	print_array(c, sizeof(c) / sizeof(int));
+	reverse_array(c, sizeof(c) / sizeof(int));
+	print_array(c, sizeof(c) / sizeof(int));
+
 	return (0);
 }
