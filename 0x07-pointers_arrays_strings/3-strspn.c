@@ -27,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 		isl++;
 	}
 
-	if (!(s[isl] >= 65 && s[isl] <= 90) && !(s[isl] >= 97 && s[isl] <= 122) && s[isl] == '\0')
+	if (s[isl] == '\0')
 	{
 		isl = isl - 1;
 	}
