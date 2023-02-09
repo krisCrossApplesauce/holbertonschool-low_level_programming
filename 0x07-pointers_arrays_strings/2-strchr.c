@@ -16,8 +16,6 @@ char *_strchr(char *s, char c)
 {
 	int i, x, sl;
 
-	char *p;
-
 	x = 0;
 
 	sl = 0;
@@ -31,14 +29,14 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c && x == 0)
 		{
-			p = &s[i];
+			s = &s[i];
 			x++;
 		}
 		else if (i == sl && x == 0)
 		{
-			p = &s[sl];
+			s = &s[sl];
 		}
 	}
 
-	return (p);
+	return (s);
 }
