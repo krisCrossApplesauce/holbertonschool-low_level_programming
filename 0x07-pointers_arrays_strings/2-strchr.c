@@ -36,7 +36,7 @@ char *_strchr(char *s, char c)
 		}
 		else if (i == sl && x == 0)
 		{
-			p = &s[sl - 1];
+			p = &s[sl];
 		}
 	}
 

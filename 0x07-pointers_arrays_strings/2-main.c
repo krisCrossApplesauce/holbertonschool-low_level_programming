@@ -13,12 +13,20 @@ int main(void)
 	
 	char *f;
 
+	char *a = "this should return null";
+
+	char *b;
+
 	f = _strchr(s, 'l');
+
+	b = _strchr(a, 'a');
 
 	if (f != NULL)
 	{
 		printf("%s\n", f);
 	}
+
+	printf("%s\n", b);
 
 	return (0);
 }
