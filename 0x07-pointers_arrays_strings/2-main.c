@@ -17,9 +17,21 @@ int main(void)
 
 	char *b;
 
+	char *c = "will it return just the last char, like it should? (yes)";
+
+	char *d;
+
+	char *e = "";
+
+	char *g;
+
 	f = _strchr(s, 'l');
 
 	b = _strchr(a, 'a');
+
+	d = _strchr(c, ')');
+
+	g = _strchr(e, 'f');
 
 	if (f != NULL)
 	{
@@ -27,6 +39,8 @@ int main(void)
 	}
 
 	printf("%s\n", b);
+	printf("%s\n", d);
+	printf("%s\n", g);
 
 	return (0);
 }
