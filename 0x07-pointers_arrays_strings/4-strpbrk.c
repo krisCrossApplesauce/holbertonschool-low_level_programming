@@ -37,7 +37,7 @@ char *_strpbrk(char *s, char *accept)
 
 	for (i = 0; i <= sl; i++)
 	{
-		for (a = 0; a <= al && x == 0; a++)
+		for (a = 0; a < al; a++)
 		{
 			if (s[i] == accept[a] && x == 0)
 			{
