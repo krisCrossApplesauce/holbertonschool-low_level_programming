@@ -7,7 +7,7 @@
  *
  * @s: char array/string, where locating character
  *
- * @array: char array/string, the chars to be located
+ * @accept: char array/string, the chars to be located
  *
  * Return: pointer, to the first occurrence of any char in array to s
  * ^if s does not contain any chars from array, points to NULL
