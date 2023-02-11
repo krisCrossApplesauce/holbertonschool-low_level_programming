@@ -53,6 +53,5 @@ char *_strstr(char *haystack, char *needle)
 			haystack = &haystack[hl];
 		}
 	}
-	printf("it did fine\n");
 	return (haystack);
 }
