@@ -17,27 +17,21 @@ char *_strstr(char *haystack, char *needle)
 	int a, b, x, hl, nl;
 
 	x = 0;
-
 	hl = 0;
-
 	nl = 0;
-
 	while (haystack[hl] != '\0')
 	{
 		hl++;
 	}
-
 	while (needle[nl] != '\0')
 	{
 		nl++;
 	}
-
 	for (a = 0; a <= hl && x == 0; a++)
 	{
 		if (haystack[a] == needle[0])
 		{
 			x = 1;
-
 			for (b = 1; b < nl; b++)
 			{
 				if (haystack[a + b] == needle[b])
@@ -45,7 +39,6 @@ char *_strstr(char *haystack, char *needle)
 					x++;
 				}
 			}
-
 			if (x == nl)
 			{
 				haystack = &haystack[a];
@@ -55,12 +48,11 @@ char *_strstr(char *haystack, char *needle)
 				x = 0;
 			}
 		}
-
 		if (a == hl)
 		{
 			haystack = &haystack[hl];
 		}
 	}
-
+	printf("it did fine\n");
 	return (haystack);
 }
