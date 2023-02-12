@@ -25,7 +25,7 @@ char *leet(char *s)
 
 	char *n = "4433110077";
 
-	for (i = 0; s[i++]; i++)
+	for (i = 0; s[i]; i++)
 	{
 		for (x = 0; x < 10; x++)
 		{
