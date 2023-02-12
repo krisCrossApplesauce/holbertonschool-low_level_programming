@@ -24,6 +24,10 @@ int main(void)
 	char *g = "ghijk";
 	char *eg;
 	char *egx;
+	char *h = "first instance is at end";
+	char *i = "dquwxyz";
+	char *hi;
+	char *hix;
 
 	t = _strpbrk(s, f);
 
@@ -33,6 +37,8 @@ int main(void)
 	bax = strpbrk(b, a);
 	eg = _strpbrk(e, g);
 	egx = strpbrk(e, g);
+	hi = _strpbrk(h, i);
+	hix = strpbrk(h, i);
 
 	printf("\nasjdifuyeh\n");
 	printf("%s\n%s\n\n", ab, abx);
@@ -40,6 +46,8 @@ int main(void)
 	printf("%s\n%s\n\n", ba, bax);
 	printf("abcde\nghijk\n");
 	printf("%s\n%s\n\n", eg, egx);
+	printf("first instance is at end\ndquwxyz\n");
+	printf("%s\n%s\n\n", hi, hix);
 
 	printf("%s\n", t);
 	return (0);
