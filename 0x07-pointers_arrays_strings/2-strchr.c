@@ -27,8 +27,9 @@ char *_strchr(char *s, char c)
 
 	for (i = 0; i <= sl; i++)
 	{
-		if (i != sl && s[i] == c && x == 0)
+		if (s[i] == c && x == 0)
 		{
+			printf("!");
 			s = &s[i];
 			x++;
 		}
