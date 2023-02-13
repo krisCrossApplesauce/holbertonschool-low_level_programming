@@ -48,7 +48,7 @@ char *_strpbrk(char *s, char *accept)
 
 		if (i == sl && x == 0)
 		{
-			s = &s[sl];
+			s = '\0';
 		}
 	}
 
