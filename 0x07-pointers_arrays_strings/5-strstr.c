@@ -3,9 +3,9 @@
 
 /**
  * _strstr - locates a substring
- * 
+ *
  * @haystack: string, where looking for substring
- * 
+ *
  * @needle: substring, what's being looked for
  *
  * Return: pointer, beginning of substring in sting
@@ -19,43 +19,34 @@ char *_strstr(char *haystack, char *needle)
 	x = 0;
 	hl = 0;
 	nl = 0;
+
 	while (haystack[hl] != '\0')
-	{
-		hl++;
-	}
+	{ hl++; }
+
 	while (needle[nl] != '\0')
-	{
-		nl++;
-	}
+	{ nl++; }
+
 	for (a = 0; a <= hl && x == 0; a++)
 	{
 		if (nl == 0)
-		{
-			x++;
-		}
+		{ x++; }
+
 		if (haystack[a] == needle[0])
 		{
 			x = 1;
 			for (b = 1; b < nl; b++)
 			{
 				if (haystack[a + b] == needle[b])
-				{
-					x++;
-				}
+				{ x++; }
 			}
 			if (x == nl)
-			{
-				haystack = &haystack[a];
-			}
+			{ haystack = &haystack[a]; }
 			else
-			{
-				x = 0;
-			}
+			{ x = 0; }
 		}
 		if (a == hl)
-		{
-			haystack = '\0';
-		}
+		{ haystack = '\0'; }
 	}
+
 	return (haystack);
 }
