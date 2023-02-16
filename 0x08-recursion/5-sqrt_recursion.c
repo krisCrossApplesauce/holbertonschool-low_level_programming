@@ -19,7 +19,7 @@ int _checker_recursion(int i, int n)
 	}
 	else if (i * i != n)
 	{
-		return(_checker_recursion(i + 1, n));
+		return (_checker_recursion(i + 1, n));
 	}
 	else
 	{
