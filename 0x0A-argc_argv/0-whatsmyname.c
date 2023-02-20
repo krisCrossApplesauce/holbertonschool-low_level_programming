@@ -1,13 +1,14 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * whats_my_name - prints its name, followed by a new line
+ * main - prints its name, followed by a new line
  *
- * Return: void
+ * Return: int
  */
 
-void whats_my_name(char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", argv[argc - argc]);
+	return (0);
 }
