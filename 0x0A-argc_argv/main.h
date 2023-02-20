@@ -4,5 +4,6 @@
 #include <stdio.h>
 
 int _putchar(char c);
+void whats_my_name(char *argv[]);
 
 #endif
