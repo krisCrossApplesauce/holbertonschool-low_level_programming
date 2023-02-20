@@ -14,14 +14,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i, n;
+	int i, n, x;
 
 	n = 0;
 
-	for (i = 0; i < argc; i++)
+	x = 0;
+
+	for (i = 1; i < argc && x == 0; i++)
 	{
-		if (*argv[i] >= 0)
+		if ((atoi(argv[i]) == 0 && *argv[i] < 48 && *argv[i] > 57))
 		{
+			x = 1;
 		}
+		else if (!(atoi(argv[i]) < 0))
+		{
+			n = n + argv[i];
+		}
+	}
+
+	if (x == 1)
+	{
+		printf("Error\n");
+		return (1);
 	}
 }
