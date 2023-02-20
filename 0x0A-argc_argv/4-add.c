@@ -22,19 +22,24 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc && x == 0; i++)
 	{
-		if ((atoi(argv[i]) == 0 && *argv[i] < 48 && *argv[i] > 57))
+		if (!(*argv[i] >= 48 && *argv[i] <= 57))
 		{
-			x = 1;
+			x++;
 		}
 		else if (!(atoi(argv[i]) < 0))
 		{
-			n = n + argv[i];
+			n = n + atoi(argv[i]);
 		}
 	}
 
-	if (x == 1)
+	if (x != 0)
 	{
 		printf("Error\n");
 		return (1);
+	}
+	else
+	{
+		printf("%d\n", n);
+		return (n);
 	}
 }
