@@ -2,9 +2,9 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(char c);
-/* int whats_my_name(int argc, char *argv[]); */
-/* int _args(int argc); */
+int main(int argc, char *argv[]);
 
 #endif
