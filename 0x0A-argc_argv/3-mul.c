@@ -21,11 +21,19 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		int a = *argv[1] - 48;
+		if (*argv[1] >= 48 && *argv[1] <= 57 && *argv[2] >= 48 && *argv[2] <= 57)
+		{
+			int a = atoi(argv[1]);
 
-		int b = *argv[2] - 48;
-		
-		printf("%d\n", a * b);
-		return (0);
+			int b = atoi(argv[2]);
+
+			printf("%d\n", a * b);
+			return (0);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
 }
