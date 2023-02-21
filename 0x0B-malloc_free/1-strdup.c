@@ -16,28 +16,20 @@ char *_strdup(char *str)
 	char *arr;
 
 	if (str == NULL)
-	{
-		return (NULL);
-	}
+	{ return (NULL); }
 
 	sl = 0;
 
 	while (str[sl] != '\n')
-	{
-		sl++;
-	}
+	{ sl++; }
 
 	arr = (char *) malloc(sl);
 
 	if (arr == NULL)
-	{
-		return (NULL);
-	}
+	{ return (NULL); }
 
 	for (i = 0; i < sl; i++)
-	{
-		arr[i] = str[i];
-	}
+	{ arr[i] = str[i]; }
 
 	return (arr);
 }
