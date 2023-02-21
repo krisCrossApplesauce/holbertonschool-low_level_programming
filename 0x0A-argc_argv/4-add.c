@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -14,7 +15,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, n, x;
+	int i, ii, n, x;
 
 	n = 0;
 
@@ -22,14 +23,15 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc && x == 0; i++)
 	{
-		if (!(*argv[i] >= 48 && *argv[i] <= 57))
+		for (ii = 0; argv[i][ii] && x == 0; ii++)
 		{
-			if (*argv[i] != 45)
+			if (!(argv[i][ii] >= 48 && argv[i][ii] <= 57))
 			{
 				x++;
 			}
 		}
-		else if (!(atoi(argv[i]) < 0))
+
+		if (!(atoi(argv[i]) < 0))
 		{
 			n = n + atoi(argv[i]);
 		}
