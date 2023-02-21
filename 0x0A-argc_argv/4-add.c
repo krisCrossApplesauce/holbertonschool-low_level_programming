@@ -24,7 +24,10 @@ int main(int argc, char *argv[])
 	{
 		if (!(*argv[i] >= 48 && *argv[i] <= 57))
 		{
-			x++;
+			if (*argv[i] != 45)
+			{
+				x++;
+			}
 		}
 		else if (!(atoi(argv[i]) < 0))
 		{
