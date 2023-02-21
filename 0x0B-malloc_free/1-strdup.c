@@ -11,14 +11,12 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i, sl;
+	unsigned int i, sl = 0;
 
 	char *arr;
 
 	if (str == NULL)
 	{ return (NULL); }
-
-	sl = 0;
 
 	while (str[sl] != '\n')
 	{ sl++; }
@@ -28,8 +26,17 @@ char *_strdup(char *str)
 	if (arr == NULL)
 	{ return (NULL); }
 
-	for (i = 0; i < sl; i++)
-	{ arr[i] = str[i]; }
+	for (i = 0; i <= sl; i++)
+	{ 
+		if (i < sl)
+		{
+			arr[i] = str[i];
+		}
+		else
+		{
+			arr[i] = '\n';
+		}
+	}
 
 	return (arr);
 }
