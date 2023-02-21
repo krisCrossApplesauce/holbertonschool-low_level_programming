@@ -34,12 +34,5 @@ char *_strdup(char *str)
 		arr[i] = str[i];
 	}
 
-	if (sl == 0)
-	{
-		return (NULL);
-	}
-	else
-	{
-		return (arr);
-	}
+	return (arr);
 }
