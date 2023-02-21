@@ -26,16 +26,9 @@ char *_strdup(char *str)
 	if (arr == NULL)
 	{ return (NULL); }
 
-	for (i = 0; i <= sl; i++)
+	for (i = 0; i < sl; i++)
 	{
-		if (i < sl)
-		{
-			arr[i] = str[i];
-		}
-		else
-		{
-			arr[i] = '\n';
-		}
+		arr[i] = str[i];
 	}
 
 	return (arr);
