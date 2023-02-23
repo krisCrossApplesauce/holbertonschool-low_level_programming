@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i, sl = 0;
+	unsigned int i, sl;
 
 	char *arr;
 
@@ -19,6 +19,8 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
+	sl = 0;
 
 	while (str[sl] != '\n')
 	{
