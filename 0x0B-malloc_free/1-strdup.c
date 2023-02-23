@@ -32,9 +32,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; arr[i]; i++)
+	i = 0;
+
+	while (arr[i])
 	{
 		arr[i] = str[i];
+		i++;
 	}
 
 	return (arr);
