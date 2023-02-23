@@ -20,7 +20,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (sl = 0; str[sl] != '\n'; sl++)
+	sl = 0;
+
+	while (str[sl] != '\n')
 	{
 		sl++;
 	}
