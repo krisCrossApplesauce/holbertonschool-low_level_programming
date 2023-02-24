@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0;
+	unsigned int i, sl;
 
 	char *arr;
 
@@ -20,24 +20,23 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[i] != '\n')
+	sl = 0;
+
+	while (str[sl] != '\n')
 	{
 		i++;
 	}
 
-	arr = malloc(sizeof(char) * i);
+	arr = malloc(sizeof(char) * sl);
 
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
 
-	i = 0;
-
-	while (arr[i])
+	while (i = 0; i < sl; i++)
 	{
 		arr[i] = str[i];
-		i++;
 	}
 
 	return (arr);
