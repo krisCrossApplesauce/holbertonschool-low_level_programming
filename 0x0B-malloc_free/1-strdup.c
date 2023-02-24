@@ -34,7 +34,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (i = 0; i < sl; i++)
+	for (i = 0; i < sl; i++)
 	{
 		arr[i] = str[i];
 	}
