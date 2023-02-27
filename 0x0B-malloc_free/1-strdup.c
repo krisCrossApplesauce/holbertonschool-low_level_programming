@@ -24,7 +24,7 @@ char *_strdup(char *str)
 
 	while (str[sl] != '\n')
 	{
-		i++;
+		sl++;
 	}
 
 	arr = malloc(sizeof(char) * sl);
