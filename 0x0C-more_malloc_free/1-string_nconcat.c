@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (n > s2l && ii <= s2l)
 		{ a[ii + s1l] = s2[ii]; }
-		else if (n < s2l && ii < s2l)
+		else if (n <= s2l && ii < s2l)
 		{ a[ii + s1l] = s2[ii]; }
 		else
 		{ a[ii + s1l] = '\0'; }
