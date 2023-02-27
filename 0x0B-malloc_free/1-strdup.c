@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	sl = 0;
 
-	while (str[sl] != '\n')
+	while (str[sl] != '\0')
 	{
 		sl++;
 	}
