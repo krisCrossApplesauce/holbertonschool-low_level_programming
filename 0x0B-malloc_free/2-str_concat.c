@@ -30,13 +30,13 @@ char *str_concat(char *s1, char *s2)
 
 	al = 0;
 
-	while (s1[s1l] != '\n')
+	while (s1[s1l] != '\0')
 	{
 		s1l++;
 		al++;
 	}
 
-	while (s2[s2l] != '\n')
+	while (s2[s2l] != '\0')
 	{
 		s2l++;
 		al++;
