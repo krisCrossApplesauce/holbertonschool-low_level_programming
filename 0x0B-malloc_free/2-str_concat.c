@@ -24,6 +24,16 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	s1l = 0;
 
 	s2l = 0;
@@ -42,7 +52,7 @@ char *str_concat(char *s1, char *s2)
 		al++;
 	}
 
-	arr = malloc(sizeof(char) * (s1l + s2l));
+	arr = malloc(sizeof(char) * (s1l + s2l + 1));
 
 	if (arr == NULL)
 	{
