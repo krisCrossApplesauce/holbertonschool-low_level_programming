@@ -20,8 +20,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	char *a;
 
-	if (s1 == NULL && s2 == NULL)
-	{ return (NULL); }
 	if (s1 == NULL)
 	{ s1 = ""; }
 	if (s2 == NULL)
@@ -37,13 +35,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{ s2l++; }
 	if (s2l > n)
 	{ s2l = n; }
-	if (s1l == 0 && s2l == 0)
-	{ return (NULL); }
 
 	a = malloc(sizeof(char) * (s1l + 1 + s2l));
 
 	if (a == NULL)
 	{ return (NULL); }
+
 	for (i = 0; i < s1l; i++)
 	{ a[i] = s1[i]; }
 	for (ii = 0; ii <= s2l; ii++)
@@ -55,5 +52,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 		{ a[ii + s1l] = '\0'; }
 	}
+
 	return (a);
 }
