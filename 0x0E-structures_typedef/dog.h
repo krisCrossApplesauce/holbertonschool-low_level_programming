@@ -10,13 +10,11 @@
  * Description: it- it makes a dog, that's about it
  */
 
-typedef struct dog dog;
-
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}
+} dog;
 
 #endif
