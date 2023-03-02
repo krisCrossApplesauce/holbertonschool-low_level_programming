@@ -16,10 +16,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t new_dog;
 	dog_t *the_dog;
+	char *n = name;
+	char *o = owner;
 
-	new_dog.name = name;
+	new_dog.name = n;
 	new_dog.age = age;
-	new_dog.owner = owner;
+	new_dog.owner = o;
 	the_dog = &new_dog;
 
 	return (the_dog);
