@@ -40,8 +40,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog.owner = owner;
 	the_dog = &new_dog;
 
-	return (the_dog);
-
 	free(n);
 	free(o);
+
+	return (the_dog);
 }
