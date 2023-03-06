@@ -5,7 +5,7 @@
  * ^on each element of an array
  *
  * @array: int array, array of things to be put into the given function
- * @size: int, size of array
+ * @size: size_t, size of array
  * @action: function pointer, points to function to be used
  *
  * Return: void
