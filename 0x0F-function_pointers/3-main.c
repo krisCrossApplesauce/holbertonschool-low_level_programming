@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error 1\n");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -33,13 +33,13 @@ int main(int argc, char *argv[])
 
 	if (get_op_func(op) == NULL)
 	{
-		printf("Error 2\n");
+		printf("Error\n");
 		exit(99);
 	}
 
 	if ((strcmp(op, "/") == 0 || strcmp(op, "%") == 0) && b == 0)
 	{
-		printf("Error 3\n");
+		printf("Error\n");
 		exit(100);
 	}
 
