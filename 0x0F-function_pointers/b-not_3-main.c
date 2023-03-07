@@ -19,7 +19,6 @@
 int main(int argc, char *argv[])
 {
 	int a, b, x;
-	char *arr[5] = {"+", "-", "*", "/", "%"};
 	char *op;
 
 	if (argc != 4)
@@ -32,13 +31,13 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	op = argv[2];
 
-	if (op != arr[0] && op != arr[1] && op != arr[2] && op != arr[3] && op != arr[4])
+	if (get_op_func(op) == NULL)
 	{
 		printf("Error 2\n");
 		exit(99);
 	}
 
-	if ((op == arr[3] || op == arr[4]) && b == 0)
+	if ((strcmp(op, "/") == 0 || strcmp(op, "%") == 0) && b == 0)
 	{
 		printf("Error 3\n");
 		exit(100);
