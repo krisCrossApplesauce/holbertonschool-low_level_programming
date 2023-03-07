@@ -7,8 +7,6 @@
  * to perform the operation asked by the user
  *
  * @s: the operator passed as argument to the program
- * @a: int
- * @b: int
  *
  * Return: function pointer
  */
@@ -31,7 +29,7 @@ int (*get_op_func(char *s))(int, int)
 		{
 			return (ops[i].f);
 		}
-		
+
 		i++;
 	}
 
