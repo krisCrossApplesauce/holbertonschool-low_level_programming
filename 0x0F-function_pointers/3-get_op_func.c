@@ -25,4 +25,14 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
+
+	while (i < 6)
+	{
+		if (s[0] == ops[i].op[0] && i != 5)
+		{
+			return (ops[i].f);
+		}
+	}
+
+	return (NULL);
 }
