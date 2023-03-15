@@ -10,14 +10,9 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int i, sl = 0;
+	unsigned int sl = 0;
 	char *s = strdup(str);
-	list_t *new;
-
-	if (str == NULL || head == NULL)
-	{ return (NULL); }
-
-	new = (list_t *) malloc(sizeof(list_t));
+	list_t *new = (list_t *) malloc(sizeof(list_t));
 
 	if (new == NULL)
 	{
@@ -28,23 +23,7 @@ list_t *add_node(list_t **head, const char *str)
 	while (s[sl])
 	{ sl++; }
 
-	new->str = malloc(sizeof(char) * sl + 1);
-
-	if (new->str == NULL)
-	{
-		free(new);
-		free(new->str);
-		return (NULL);
-	}
-
-	for (i = 0; i <= sl; i++)
-	{
-		if (i < sl)
-		{ new->str[i] = s[i]; }
-		else
-		{ new->str[i] = '\0'; }
-	}
-
+	new->str = s;
 	new->len = sl;
 	new->next = (*head);
 
