@@ -11,7 +11,9 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index > (sizeof(n) * 8))
+	/* A BIT IS A DIGIT IN BINARY */
+	/* THEY BYTE SIZE OF AN OBJECT IS HOW MANY DIGITS OF BINARY IT TAKES */
+	if (index > (sizeof(n) * sizeof(unsigned long int)))
 	{ return (-1); }
 
 	return ((n >> index) & 1);
