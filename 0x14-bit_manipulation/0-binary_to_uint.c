@@ -16,6 +16,9 @@ unsigned int binary_to_uint(const char *b)
 	int i, ii, sl = 0;
 	unsigned int x = 1, y, a = 0;
 
+	if (b == NULL)
+	{ return (0); }
+
 	while (b[sl] != '\0')
 	{ sl++; }
 
