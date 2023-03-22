@@ -18,6 +18,7 @@ int main(void)
 
 	head = &hello;
 	new = malloc(sizeof(dlistint_t));
+
 	if (new == NULL)
 	{
 		dprintf(2, "Error: Can't malloc\n");
@@ -29,7 +30,7 @@ int main(void)
 	new->next = head;
 	new->prev = NULL;
 	head = new;
-	n = print_dlistint(head);
+	n = dlistint_len(head);
 	printf("-> %lu elements\n", n);
 	free(new);
 	return (EXIT_SUCCESS);
