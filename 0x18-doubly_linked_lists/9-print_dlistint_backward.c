@@ -14,6 +14,9 @@ size_t print_dlistint_backward(const dlistint_t *h)
 	size_t a = 0;
 	const dlistint_t *node = h;
 
+	if (!(node))
+	{ return (0); }
+
 	while (node->next != NULL)
 	{ node = node->next; }
 
