@@ -13,20 +13,16 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	int al = 0;
 	unsigned long int idx;
 	hash_node_t *new = (hash_node_t *) malloc(sizeof(hash_node_t));
 
-	if (!(new) || key == NULL)
+	if (!ht || !key || !new)
 	{
 		free(new);
 		return (0);
 	}
 
-	while (ht->array[al])
-	{ al++; }
-
-	idx = (hash_djb2(key) % al);
+	idx = key_index((const unsigned char *) key, ht->size);
 
 	new->key = strdup(key);
 	new->value = strdup(value);
