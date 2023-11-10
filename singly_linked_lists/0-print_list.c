@@ -1,23 +1,28 @@
 #include "lists.h"
 
 /**
-* print_list - prints a list
-*
-* @h: a singly linked list
-*
-* Return: size_t, the number of nodes
-*/
+ * print_list - prints a list
+ *
+ * @h: the head of a singly linked list
+ *
+ * Return: size_t, the number of nodes
+ */
 size_t print_list(const list_t *h)
 {
 	const list_t *n = h;
 	int x = 0;
 	size_t c = 0;
 
+	if (h == NULL)
+	{
+		return (c);
+	}
+
 	while (x == 0)
 	{
 		if (n->str == NULL)
 		{
-			printf("[0] nil\n");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
