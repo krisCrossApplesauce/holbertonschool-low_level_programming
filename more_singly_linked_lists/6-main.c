@@ -14,6 +14,8 @@ int main(void)
     int n;
 
     head = NULL;
+    n = pop_listint(&head);
+    printf("- %d\n", n);
     add_nodeint_end(&head, 0);
     add_nodeint_end(&head, 1);
     add_nodeint_end(&head, 2);
