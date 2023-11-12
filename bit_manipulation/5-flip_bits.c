@@ -7,7 +7,8 @@
  * @n: unsigned long int, the number to be compared to the other
  * @m: unsigned long int, the other number
  *
- * Return: unsigned int, number of bits that are different between the two numbers
+ * Return: unsigned int,
+ * number of bits that are different between the two numbers
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
